@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f2f5;
+  margin: 0;
+}
+
+/* ===================== 页面容器 ===================== */
+.page-container {
+  padding: 0 0 24px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  padding: 0 4px;
+}
+
+.page-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.page-subtitle {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* ===================== 统计卡片 ===================== */
+.stat-card {
+  border: none !important;
+  border-radius: 14px !important;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+}
+.stat-card .el-card__body {
+  padding: 20px 24px !important;
+}
+.stat-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #fff;
+  flex-shrink: 0;
+}
+.stat-label {
+  color: #94a3b8;
+  font-size: 13px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+.stat-value {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.1;
+  font-family: 'DIN Alternate', 'Helvetica Neue', sans-serif;
+}
+
+/* ===================== 表格卡片 ===================== */
+.table-card {
+  border: none !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+.table-card .el-card__body {
+  padding: 0 !important;
+}
+.filter-card {
+  border: none !important;
+  border-radius: 12px !important;
+  margin-bottom: 16px;
+}
+.filter-card .el-card__body {
+  padding: 18px 20px 2px !important;
+}
+
+/* ===================== 状态标签 ===================== */
+.status-tag {
+  min-width: 72px;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* ===================== 路线展示 ===================== */
+.route-cell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.route-point {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.route-arrow {
+  color: #cbd5e1;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* ===================== 分页 ===================== */
+.pagination {
+  margin-top: 16px;
+  padding: 12px 20px;
+  justify-content: flex-end;
+  display: flex;
+}
+
+/* ===================== 过渡动画 ===================== */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
